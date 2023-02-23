@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 
 
 * {
@@ -8,10 +9,12 @@
     background-attachment: fixed;
     color: whitesmoke;
     box-sizing: border-box;
+    font-family: 'Mynerve', cursive;
+    letter-spacing: 1px;
 }
 
 body {
-    background-image: linear-gradient(to bottom, black, rgb(78, 78, 78));
+    background-image: linear-gradient(to bottom, #15191d, #5a6a79);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,9 +25,9 @@ body {
     width: 40%;
     height: 40%;
     margin: 20px;
-    border: 2px solid white;
-    border-radius: 2px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.705);
+    border: 2px solid #15191d;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.519);
 
     display: flex;
     flex-direction: column;
@@ -59,6 +62,7 @@ form {
 input {
     color: black;
     border-radius: 5px;
+    font-style: italic;
 }
 
 input[type="text"] {
@@ -66,7 +70,12 @@ input[type="text"] {
     height: 25px;
     text-align: center;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.595);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.519);
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #010101;
 }
 
 input[type="button"] {
@@ -74,6 +83,10 @@ input[type="button"] {
     width: 60%;
     height: 25px;
     cursor: pointer;
+    background-color: #4b538b;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.595);
+    color: rgb(233, 233, 233);
+    border: 1px solid #010101;
 }
 
 input[type="button"]:hover {
@@ -83,13 +96,15 @@ input[type="button"]:hover {
 ol {
     height: 100%;
     width: 50%;
-    list-style-type: circle;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 15px 0px 15px 0px;
-    font-style: italic;
+    font-style: oblique;
+    margin: 25px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .item-container {
@@ -99,16 +114,24 @@ ol {
 
 .item-container:hover {
     transform: scale(1.02);
+    text-decoration: line-through;
+    text-decoration-color: #4b538b;
+    text-decoration-thickness: 3px;
 }
 
 .selecionado{
     text-decoration: line-through;
-    text-decoration-color: red;
+    text-decoration-color: #4b538b;
+    text-decoration-thickness: 3px;
 }
 
 hr {
     margin-bottom: 5px;
     width: 100%;
+}
+
+p {
+    font-size: 12px;
 }
 
 .centralizar {
