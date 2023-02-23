@@ -24,35 +24,63 @@ body {
 
 .adicionar-tarefas, .tarefas {
     width: 85%;
+<<<<<<< HEAD
     height: 50%;
+=======
+>>>>>>> style
     margin: 20px;
     border: 2px solid #15191d;
     border-radius: 8px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.519);
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     align-items: center;
+=======
+>>>>>>> style
 }
 
 .adicionar-tarefas {
     height: 25%;
 }
 
+<<<<<<< HEAD
 h2 {
+=======
+.tarefas {
+    height: 75%;
+}
+
+.container {
+>>>>>>> style
     width: 100%;
-    height: 25%;
+    padding: 5px;
+    flex: 4 1 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+}
+
+
+h2 {
+    margin: 10px;
     font-size: 20px;
     text-transform: uppercase;
 }
+
 
 form {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
 
 input {
     color: black;
@@ -88,23 +116,12 @@ input[type="button"]:hover {
     transform: scale(1.001);
 }
 
-ol {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 15px 0px 15px 0px;
-    font-style: oblique;
-    margin: 25px;
-    overflow-x: hidden;
-    overflow-y: auto;
+.titulo {
+    flex-grow: 1;
 }
 
-.item-container {
-    width: 100%;
-    cursor: pointer;
+.dica {
+    flex-grow: 1;
 }
 
 

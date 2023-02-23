@@ -9,22 +9,37 @@
 </head>
 <body>
     <section class="adicionar-tarefas">
-        <h2 class="centralizar">Adicionar Tarefa</h2>
+        <div class="container">
+            <h2>Adicionar Tarefa</h2>
+        </div>
 
-        <form action="#">
-            <input type="text" name="nova-tarefa" id="ntarefa" autofocus placeholder="Nova Tarefa" maxlength="25">
-
-            <input type="button" value="Adicionar" id="btn-add">
-        </form>
+        <div class="container">
+            <form action="#">
+                <input type="text" name="nova-tarefa" id="ntarefa" autofocus placeholder="Nova Tarefa" maxlength="25">
+                <input type="button" value="Adicionar" id="btn-add">
+            </form>
+        </div>
     </section>
 
     <section class="tarefas">
+<<<<<<< HEAD
         <h2 class="centralizar">Tarefas</h2>
         
         <p>Dica: clique em uma tarefa para marcar como concluído.</p>
+=======
+        <div class="container titulo">
+            <h2>Tarefas</h2>
+        </div>
+        
+        <div class="container dica">
+            <p>Dica: clique em uma tarefa para marcar como concluído.</p>
+        </div>
+>>>>>>> style
 
-        <ol id="lista-de-tarefas">
-        </ol>
+        <div class="container">
+            <ol id="lista-de-tarefas">
+            </ol>
+        </div>
     </section>
 
     <script src="assets/js/script.js"></script>
