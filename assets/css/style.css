@@ -31,7 +31,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -113,14 +112,10 @@ ol {
 }
 
 
-@media screen and (min-width: 450px) {
-    .item-container:hover {
-        transform: scale(1.02);
-        text-decoration: line-through;
-        text-decoration-color: #4b538b;
-        text-decoration-thickness: 3px;
-    }
+.item-container:hover {
+    transform: scale(1.02);
 }
+
 
 .selecionado{
     text-decoration: line-through;
@@ -144,6 +139,7 @@ p {
     align-items: center;
     text-align: center;
 }
+
 
 @media screen and (max-width: 450px) {
     body {
