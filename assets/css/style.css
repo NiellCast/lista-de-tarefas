@@ -3,19 +3,19 @@
 
 
 * {
-    padding: 0px;
     margin: 0px;
-    text-decoration: none;
+    padding: 0px;
     background-attachment: fixed;
     color: whitesmoke;
     box-sizing: border-box;
-    font-family: 'Mynerve', cursive;
+    text-decoration: none;
     letter-spacing: 1px;
+    font-family: 'Mynerve', cursive;
 }
 
 body {
-    background-image: linear-gradient(to bottom, #15191d, #5a6a79);
     height: 100vh;
+    background-image: linear-gradient(to bottom, #15191d, #5a6a79);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,6 @@ body {
     border: 2px solid #15191d;
     border-radius: 8px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.519);
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,10 +36,6 @@ body {
 
 .adicionar-tarefas {
     height: 25%;
-}
-
-.adicionar-tarefas > h2 {
-    margin-top: 20px;
 }
 
 h2 {
