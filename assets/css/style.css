@@ -17,13 +17,14 @@ body {
     background-image: linear-gradient(to bottom, #15191d, #5a6a79);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .adicionar-tarefas, .tarefas {
-    width: 40%;
-    height: 40%;
+    width: 85%;
+    height: 50%;
     margin: 20px;
     border: 2px solid #15191d;
     border-radius: 8px;
@@ -138,18 +139,4 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-
-@media screen and (max-width: 900px) {
-    body {
-        flex-direction: column;
-    }
-
-    .adicionar-tarefas, .tarefas {
-        width: 75%;
-        height: 50%;
-        margin: 20px;
-    }
-
 }
