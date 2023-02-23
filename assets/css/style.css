@@ -112,11 +112,14 @@ ol {
     cursor: pointer;
 }
 
-.item-container:hover {
-    transform: scale(1.02);
-    text-decoration: line-through;
-    text-decoration-color: #4b538b;
-    text-decoration-thickness: 3px;
+
+@media screen and (min-width:450) {
+    .item-container:hover {
+        transform: scale(1.02);
+        text-decoration: line-through;
+        text-decoration-color: #4b538b;
+        text-decoration-thickness: 3px;
+    }
 }
 
 .selecionado{
@@ -132,6 +135,7 @@ hr {
 
 p {
     font-size: 12px;
+    text-align: center;
 }
 
 .centralizar {
