@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    background-attachment: fixed;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, black, rgb(78, 78, 78));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adicionar-tarefas, .tarefas {
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adicionar-tarefas {
+    height: 25%;
+}
+
+.adicionar-tarefas > h2 {
+    margin-top: 20px;
+}
+
+h2 {
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    color: black;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    width: 75%;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    padding: 2px;
+    width: 60%;
+    height: 25px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.001);
+}
+
+ol {
+    height: 100%;
+    width: 50%;
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 0px 15px 0px;
+    font-style: italic;
+}
+
+.item-container {
+    width: 100%;
+    cursor: pointer;
+}
+
+.item-container:hover {
+    transform: scale(1.02);
+}
+
+.selecionado{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+hr {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        flex-direction: column;
+    }
+
+    .adicionar-tarefas, .tarefas {
+        width: 75%;
+        height: 50%;
+        margin: 20px;
+    }
+
+}
