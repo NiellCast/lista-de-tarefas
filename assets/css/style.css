@@ -113,7 +113,7 @@ ol {
 }
 
 
-@media screen and (min-width:450) {
+@media screen and (min-width: 450px) {
     .item-container:hover {
         transform: scale(1.02);
         text-decoration: line-through;
