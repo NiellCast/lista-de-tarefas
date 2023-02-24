@@ -1,6 +1,7 @@
 const lista = document.querySelector("#lista-de-tarefas")
 const botaoAdicionar = document.querySelector("#btn-add")
 const tarefa = document.querySelector("#ntarefa")
+const botaoDeletar = document.querySelector("#btn-delete")
 
 
 function capitalize(word) {
@@ -34,4 +35,13 @@ botaoAdicionar.addEventListener('click', () => {
         adicionarItens()
         tarefa.value = ''
     }
+})
+
+botaoDeletar.addEventListener('click', () => {
+    let itensMarcados = [...document.querySelectorAll('.selecionado')].map((elemento) => {
+        elemento.parentNode.removeChild(elemento);
+
+    })
+
+
 })

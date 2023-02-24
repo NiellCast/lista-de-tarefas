@@ -48,10 +48,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: auto;
 }
 
+.lista {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: auto;
+}
 
 h2 {
     margin: 10px;
