@@ -153,3 +153,12 @@ hr {
     margin-bottom: 5px;
     width: 100%;
 }
+
+input::placeholder {
+    font-weight: bold;
+    color: #4b538b;
+}
+
+input[type="text"]::selection {
+    color: #4b538b;
+}
