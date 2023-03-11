@@ -40,7 +40,7 @@ botaoAdicionar.addEventListener('click', () => {
 botaoDeletar.addEventListener('click', () => {
     let itensMarcados = [...document.querySelectorAll('.selecionado')].map((elemento) => {
         elemento.parentNode.removeChild(elemento);
-
+        
     })
 
 

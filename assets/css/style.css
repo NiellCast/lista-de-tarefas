@@ -102,10 +102,11 @@ input[type="button"] {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.595);
     color: rgb(233, 233, 233);
     border: 1px solid #010101;
+    transition: transform 0.5s ease;
 }
 
 input[type="button"]:hover {
-    transform: scale(1.001);
+    transform: scale(1.005);
 }
 
 .titulo {
@@ -135,11 +136,12 @@ ol {
     width: 50%;
     cursor: pointer;
     margin: 2px;
+    transition: transform 0.5s ease;
 }
 
 
 .item-container:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 
